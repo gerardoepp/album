@@ -1,0 +1,27 @@
+<app-header [listening]="listening"></app-header>
+<main role="main" *ngIf="albums">
+  <div class="album py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let album of albums.albums; let i = index;">
+          <div class="card mb-4 box-shadow">
+            <div class="card-body">
+              <h2 class="album-title">{{album.name}}</h2>
+              <div class="d-flex justify-content-between align-items-center">
+                <h6 class="year-album">Año {{album.year}}</h6>
+                <div class="btn-group" *ngIf="album.songs">
+                  <button type="button" (click)="onSelect(album)" class="btn btn-primary btn-albun">Lista de canciones ( {{album.songs.length}} )</button>
+                </div>
+              </div>
+              <div class="songs-container" *ngIf="selectedAlbum === album" @goals>
+                <div *ngFor="let song of album.songs; let songIndex = index" class="song-item">
+                  <button (click)="onSongSelect(song.title)" class="btn btn-link btn-song">{{songIndex + 1 }}- {{song.title || 'Sin Titulo'}}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

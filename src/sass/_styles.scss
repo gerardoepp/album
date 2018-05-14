@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+@import "_variables";
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+  color: $gray;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.total-albums {
+  color: $accent;
+  font-weight: 400;
+  font-size: 12px;
+}
+.box-shadow {
+  box-shadow: 0 0 30px rgba($black, .1);
+}
+.btn-albun {
+  background: #8042f5;
+  border-radius: 20px;
+  font-size:1em;
+  border-color: unset;
+}

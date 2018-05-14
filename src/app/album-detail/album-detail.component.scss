@@ -1,0 +1,29 @@
+.song-item {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+     .btn-link {
+        text-decoration: none;
+    }
+}
+
+.songs-container {
+    margin-top: 10px;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.album-title {
+    font-size: 3em;
+}
+.btn-albun {
+    background: #8042f5;
+    border-radius: 20px;
+    font-size:1em;
+    border-color: unset;
+}
+.year-album {
+    font-size: 12px;
+}

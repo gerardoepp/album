@@ -1,0 +1,10 @@
+<header>
+  <div class="navbar navbar-light bg-light box-shadow">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="../../assets/img/musicalDisc.svg" alt="album" class="img-top">
+        <strong *ngIf="listening">Escuchando...{{listening.song}}-{{listening.artist}}</strong>
+      </a>
+    </div>
+  </div>
+</header>
